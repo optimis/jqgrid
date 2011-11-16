@@ -44,7 +44,7 @@ module Jqgrid
         search = ""
         filter_toolbar = ""
         if options[:search] == 'true'
-          search = %Q/jQuery("##{id}").jqGrid('navButtonAdd', "##{id}_pager",{ caption : "", title : "Toggle Search Toolbar", buttonicon : 'ui-icon-#search', onClickButton : function(){ mygrid[0].toggleToolbar() } })/
+          search = %Q/jQuery("##{id}").jqGrid('navButtonAdd', "##{id}_pager",{ caption : "", title : "Toggle Search Toolbar", buttonicon : 'ui-icon-search', onClickButton : function(){ mygrid[0].toggleToolbar() } })/
           filter_toolbar = "mygrid.jqGrid('filterToolbar');"
           filter_toolbar << "mygrid[0].toggleToolbar()"
         end
